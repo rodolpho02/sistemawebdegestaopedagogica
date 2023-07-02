@@ -1,0 +1,42 @@
+.direita{
+   position:absolute;
+   right:20px;
+}
+
+.topo{
+   position:absolute;
+   top:0px;
+}
+
+.a {
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+}
+.ul {
+   margin: 20px 0 0 20px;
+   list-style: none;
+}
+.a {
+   position: relative; /* Para que a imagem não saia fora do link */
+   display: block;
+   width: 100px;
+   padding: 5px 0;
+   border:1px #999999 solid;
+   background-color: #CCCCCC;
+   text-decoration: none;
+   color: #FFFFFF;
+}
+.a:hover {
+   background-color: #999999;
+}
+.a span {
+   display: none; /* Aqui você define que todo SPAN que estiver dentro de um A estará invisível */
+}
+.a:hover span {
+   display: block; /* Tranforma o SPAN em um elemento do tipo bloco */
+   position: absolute; /* Para você poder posicionar a vontade, sem quebrar o layour em volta */
+   top: 0px; /* Para ficar na mesma altura do link */
+   left: 100%; /* Empurra a imagem para fora do link, ficando a lado do mesmo */
+   border: 1px #CCCCCC solid; /* Estilo extra, lembrando que você pode colocar qualquer estilo nesse elemento */
+}
